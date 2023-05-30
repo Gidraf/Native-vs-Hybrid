@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Slide Transitions</title>
+
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+		<style type="text/css" media="screen">
+			body{
+				background-color: #00513a!important;
+
+			}
+			h1 {
+				color: antiquewhite!important;
+			}
+			h3, li {
+				color: wheat!important;
+			}
+			h5 {
+				color: wheat!important;
+			}
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h3 {
+				color: #fff;
+				
+			}
+			.slides section.has-light-background,
+			.slides section.has-light-background h3 {
+				color: #222;
+			}
+
+			.content {
+				font-size: 1.5rem;
+				color: white;
+			}
+
+			.logo {
+				position: fixed;
+				bottom: 1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<img class="logo" src="./co-opbank.jpeg"/>
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					<h1>Native vs Hybrid</h1>
+					
+				</section>
+
+				<section data-transition="convex">
+					<h1>Introduction</h1>
+					
+				</section>
+				<section data-transition="zoom">
+					<h1>Native Applications</h1>
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<p class="content">
+						With the rise of smartphones, mobile native application development became prominent. Apple's iOS and Google's Android emerged as the dominant mobile platforms.
+						</p>
+						<p class="content">Apple introduced the iOS SDK, which allowed developers to write applications in Objective-C and later Swift.</p>
+						<p class="content">Google provided the Android SDK, which used Java/Kotlin as the primary language for development. Native applications took advantage of the platform-specific features and offered high performance and seamless integration with the device's capabilities.
+					</p>
+
+				</section>
+
+				<section data-transition="zoom">
+					<h1>Hybrid Applications</h1>
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<p class="content">
+						Hybrid applications emerged as a response to the need for cross-platform compatibility and code reuse. The rise of web technologies and the desire to leverage them for mobile app development led to the creation of hybrid frameworks.
+						</p>
+						<p class="content">Web Technologies: Web technologies like HTML, CSS, and JavaScript became widely adopted for building websites and web applications. They offered a cross-platform and accessible approach for delivering content and interactivity on different devices and browsers.</p>
+						<p class="content">As mobile platforms multiplied, developers faced the challenge of building applications for multiple operating systems. It was time-consuming and expensive to develop separate applications for each platform. The demand for cross-platform compatibility and code reuse paved the way for hybrid frameworks.</p>
+
+				</section>
+				<section data-transition="convex-in concave-out">
+					<h3>Hybrid App Technologies</h3>
+						<ul>
+							<li>Cordova</li>  
+							<li>Capacitor</li> 
+							<li>Native</li>
+							<li>Flutter</li>
+						</ul>
+				</section>
+				</section>
+				<section data-transition="zoom">
+					<h1>Cordova</h1>
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<h5>Definition:</h5>
+					<p class="content">
+						Cordova (previously known as PhoneGap) is an open-source mobile application development framework that allows developers to build mobile apps using HTML, CSS, and JavaScript. It uses a WebView to render the user interface within a native container.
+						</p>
+						<h5>Choice:</h5>
+						<p class="content">Cordova is a popular choice for developers who are already familiar with web technologies and want to reuse their existing web development skills to create cross-platform mobile apps.</p>
+						<p class="content">Cordova provides a relatively simple development process and allows developers to use their existing web development knowledge.</p>
+						<p class="content">It offers a wide range of plugins to access device capabilities, making it suitable for building basic to moderately complex mobile applications.</p>
+						<p class="content">However, performance can be a limitation, especially for graphics-intensive or high-performance applications.</p>
+
+				</section>
+				<section data-transition="zoom">
+					<h1>Capacitor</h1>
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<h5>Definition:</h5>
+					<p class="content">
+						Capacitor is an open-source cross-platform app runtime that allows developers to build mobile apps using web technologies (HTML, CSS, JavaScript) and access native device features through a JavaScript API. It provides a consistent API across iOS, Android, and the web, and leverages modern web tooling.
+						</p>
+						<h5>Choice:</h5>
+						<p class="content">Capacitor offers a more native-like experience compared to Cordova since it uses modern web standards and leverages native WebView on each platform.</p>
+						<p class="content">It provides a consistent API surface across platforms, making it easier to share code between different operating systems. Capacitor also supports Progressive Web Apps (PWA), allowing developers to build web apps that can be installed on users' devices.</p>
+
+				</section>
+				<section data-transition="zoom">
+					<h1>React Native</h1>
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<h5>Definition:</h5>
+					<p class="content">
+						React Native is a popular open-source framework developed by Facebook. It allows developers to build mobile apps using JavaScript and a UI framework.
+						</p>
+						<p class="content">React Native uses native components instead of WebView-based rendering, resulting in improved performance.</p>
+						<h5>Choice:</h5>
+						<p class="content">React Native is a good choice for developers who are already familiar with React and want to build cross-platform mobile apps while maintaining a native-like user experience.</p>
+						<h5>Strength:</h5>
+						<p class="content">React Native offers excellent performance since it uses native components and rendering. It provides a rich set of pre-built components, and developers can create custom native components for more complex functionality.</p>
+						<p class="content">React Native also allows code sharing between platforms, saving development time. However, there might be cases where platform-specific functionality or performance optimization requires writing platform-specific code.</p>
+						<!-- <p class="content">It offers a wide range of plugins to access device capabilities, making it suitable for building basic to moderately complex mobile applications.</p>
+						<p class="content">However, performance can be a limitation, especially for graphics-intensive or high-performance applications.</p> -->
+
+				</section>
+				<section data-transition="zoom">
+					<h1>Flutter</h1>
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<h5>Definition:</h5>
+					<p class="content">
+						Flutter is an open-source UI framework developed by Google for building natively compiled applications for mobile, web, and desktop platforms from a single codebase.
+						</p>
+						<p class="content">It enables developers to create high-quality, visually appealing, and performant applications with a rich set of pre-designed widgets and tools.</p>
+						
+
+				</section>
+				<section data-transition="convex-in concave-out">
+					<h1>Consideration for Hybrid technologies</h1>
+				</section>
+				<!-- <section data-transition="zoom">
+					<h1>Performance</h1>
+				</section> -->
+				<section data-transition="zoom-in fade-out">
+					<section>
+					<h5>Cost-effectiveness</h5>
+					<p class="content">
+						Developing a single hybrid application can be more cost-effective compared to building separate native applications for multiple platforms. With a hybrid approach, developers can leverage their existing web development skills and reuse a significant portion of the codebase across different platforms, reducing development time and costs.
+						</p>
+					<h5>Time to Market:</h5>
+					<p class="content">
+						Hybrid technologies can enable faster time to market as developers can simultaneously target multiple platforms with a single codebase. This is especially beneficial for businesses that prioritize quick deployment and reaching a wider audience.
+						</p>
+					<h5>Maintenance and Updates</h5>
+					<p class="content">
+						Hybrid applications typically require less effort for maintenance and updates. Since changes are made to a single codebase, developers can quickly roll out updates and bug fixes across all platforms without the need for separate deployments and approvals.
+					</p>
+					</section>
+					<section>
+						<h5>Content-Centric Applications</h5>
+						<p class="content">
+							Hybrid technologies are well-suited for content-centric applications, such as news portals, blogs, or information-sharing platforms. These types of applications primarily rely on presenting information to users rather than complex platform-specific functionality, making hybrid development a viable option.
+						</p>
+						<h5>Simple Application Logic</h5>
+						<p class="content">
+							f an application has relatively simple business logic and doesn't heavily rely on complex device-specific features or hardware integration, a hybrid approach can provide a sufficient and efficient solution.
+						</p>
+						<h5>Cross-Platform Consistency</h5>
+						<p class="content">
+							Hybrid technologies can help maintain a consistent user experience across different platforms. By using web technologies, developers can create a unified design and functionality that looks and behaves similarly across various devices and operating systems.
+						</p>
+						</section>
+
+						<section>
+							<h5>Rapid Prototyping</h5>
+							<p class="content">
+								Hybrid technologies offer agility and flexibility during the prototyping phase of an application. By quickly building a proof-of-concept using web technologies, developers can gather feedback and validate ideas before committing to full-scale native development.
+							</p>
+							
+							</section>
+				</section>
+				<section data-transition="convex-in concave-out">
+					<h1>Limitations of Hybrid Applications</h1>
+				</section>
+				<!-- <section data-transition="zoom">
+					<h1>Performance</h1>
+				</section> -->
+				<section data-transition="zoom-in fade-out">
+					<section>
+					<h5>Perfomance:</h5>
+					<p class="content">
+						Hybrid apps often suffer from performance issues compared to native apps. They rely on WebView-based rendering or intermediate layers to display the user interface, which can result in slower loading times, less responsive interactions, and lower frame rates for animations. Native apps, on the other hand, have direct access to platform-specific optimizations and hardware acceleration, leading to better overall performance.
+						</p>
+					<h5>User Experience:</h5>
+					<p class="content">
+						Hybrid apps may struggle to provide a seamless and consistent user experience across different platforms. While efforts are made to mimic native UI components, there can still be inconsistencies in look, feel, and behavior. Native apps, developed using platform-specific UI frameworks, can deliver a more polished and intuitive user interface that adheres to platform guidelines.
+						</p>
+					<h5>Access to Device Features</h5>
+					<p class="content">
+						Hybrid frameworks provide plugins to access device features, but they may not cover the full range of functionalities available natively. New or platform-specific features may take longer to become available in hybrid frameworks, and some advanced or low-level device capabilities may be inaccessible. Native apps have direct access to the latest device features and APIs, allowing for more extensive utilization of device capabilities.
+					</p>
+					</section>
+					<section>
+						<h5>Limited Native Code Integration: </h5>
+						<p class="content">
+							Hybrid apps heavily rely on web technologies, and integrating native code or third-party libraries may require additional effort and workarounds. While some native code integration is possible through plugins or bridging mechanisms, it may not always be as seamless or performant as in native development. Native apps have full access to native code and libraries, enabling deep integration and utilization of platform-specific functionalities.
+						</p>
+						<h5>Dependency on Hybrid Frameworks:</h5>
+						<p class="content">
+							Hybrid app development introduces a dependency on the chosen hybrid framework and its updates. If the framework becomes deprecated or lacks active maintenance, it can lead to compatibility issues, security vulnerabilities, and limited support for new platform features. Native development, backed by the platform providers (Apple and Google), offers long-term support, compatibility, and timely updates.
+						</p>
+						<h5>Limited Performance Optimization:</h5>
+						<p class="content">
+							Hybrid apps may face challenges in achieving the same level of performance optimization as native apps. Native app development allows developers to fine-tune performance, memory management, and resource utilization specifically for the target platform. Hybrid frameworks, operating at an abstraction layer, may have limitations in terms of optimization and responsiveness
+						</p>
+						</section>
+
+				</section>
+				<section data-transition="convex-in concave-out">
+					<h3>Native Technologies</h3>
+						<ul>
+							<li>Java/Kotlin</li>  
+							<li>Objective C/ Swift</li> 
+						</ul>
+				</section>
+				</section>
+				<section data-transition="zoom">
+					<h1>Android Java</h1>
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<h5>Definition:</h5>
+					<p class="content">
+						Android Java is the traditional programming language used for Android app development. It is based on the Java programming language and utilizes the Android SDK provided by Google.
+						</p>
+						<h5>Choice:</h5>
+						<p class="content">Android Java is a suitable choice for developers who want to build Android apps with a focus on performance, native capabilities, and deep integration with the Android ecosystem.</p>
+						<h5>Superiority</h5>
+						<p class="content">Native Android development offers maximum control and access to the Android platform's features and APIs.</p>
+						<p class="content">It allows developers to create high-performance apps with smooth animations, access to low-level functionalities, and seamless integration with the operating system. Additionally, Android Java benefits from a vast community and a mature ecosystem of libraries and tools.</p>
+				</section>
+				<section data-transition="zoom">
+					<h1>Android Kotlin</h1>
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<h5>Definition:</h5>
+					<p class="content">
+						Kotlin is a modern programming language developed by JetBrains and fully supported by Google for Android app development. It is designed to be more concise, expressive, and safe than Java. Its the official programming language of Android
+						</p>
+						<h5>Choice:</h5>
+						<p class="content">Kotlin has gained popularity rapidly among Android developers due to its modern syntax, improved safety features, and seamless interoperability with Java. It is a recommended choice for building Android apps, and many developers have migrated from Java to Kotlin.</p>
+						<p class="content"></p>
+
+				</section>
+				<section data-transition="convex-in concave-out">
+					<h1>Benefits of Native APPs over Hybrid APPs</h1>
+				</section>
+				<!-- <section data-transition="zoom">
+					<h1>Performance</h1>
+				</section> -->
+				<section data-transition="zoom-in fade-out">
+					<section>
+					<h5>Performance</h5>
+					<p class="content">
+						Native apps are generally faster and more responsive than hybrid apps. Native technologies allow direct access to device-specific APIs and hardware acceleration, resulting in smoother animations, quicker load times, and better overall performance. Hybrid apps, on the other hand, rely on WebView-based rendering or intermediate layers, which can introduce performance overhead.
+						</p>
+					<h5>User Experience</h5>
+					<p class="content">
+						Native apps provide a superior user experience by adhering to platform-specific design guidelines and offering seamless integration with the underlying operating system. Native apps can leverage native UI components, resulting in a more polished and intuitive interface. Hybrid apps, although capable of achieving a native-like look and feel, may exhibit inconsistencies or limitations in terms of UI responsiveness and behavior.
+						</p>
+					<h5>Access to Device Features</h5>
+					<p class="content">
+						Native development allows direct access to a wide range of device features and APIs, such as camera, GPS, push notifications, contacts, and sensors. This enables developers to leverage the full potential of the device and deliver richer and more robust app experiences. While hybrid frameworks provide plugins to access some device capabilities, they may not cover the full spectrum of functionalities available natively.
+					</p>
+					</section>
+					<section>
+						<h5>Platform-Specific Optimization</h5>
+						<p class="content">
+							Native development allows developers to take advantage of platform-specific optimizations, ensuring optimal performance and resource utilization. Native apps can leverage platform-specific tools, libraries, and frameworks that are finely tuned for the respective operating systems. In contrast, hybrid frameworks often have limitations or require additional workarounds to achieve similar optimizations.
+						</p>
+						<h5>Ecosystem and Community Support</h5>
+						<p class="content">
+							Native development benefits from mature ecosystems and extensive community support. There are abundant resources, documentation, and libraries available for native technologies, making it easier for developers to find solutions to their problems or leverage existing components. Hybrid frameworks have their own ecosystems, but they might not offer the same breadth and depth of resources as native platforms.
+						</p>
+						<h5>Long-Term Viability</h5>
+						<p class="content">
+							Native technologies are backed by large corporations (Google for Android and Apple for iOS) and have a strong presence in the market. They receive regular updates, improvements, and security patches, ensuring long-term support and compatibility with new OS versions. Hybrid frameworks, although actively maintained, may face challenges in keeping up with the rapid evolution of native platforms and supporting all the latest features and APIs
+						</p>
+						</section>
+
+						<!-- <section>
+							<h5>Rapid Prototyping</h5>
+							<p class="content">
+								Hybrid technologies offer agility and flexibility during the prototyping phase of an application. By quickly building a proof-of-concept using web technologies, developers can gather feedback and validate ideas before committing to full-scale native development.
+							</p>
+							
+							</section> -->
+				</section>
+				<section data-transition="convex-in concave-out">
+					<h3>Companies Behind Native and Hybrid Technologies:</h3>
+						
+				</section>
+				<section>
+				<section data-transition="zoom-in fade-out">
+					<h5>Native:</h5>
+					<p class="content">
+						<strong>Android</strong>: Developed and supported by Google. <br/>
+						<strong>Swift:</strong> Developed by Apple for iOS, macOS, watchOS, and tvOS. <br/>
+						<strong>Objective-C:</strong> Primarily associated with Apple and NeXT.
+						</p>
+						<!-- <h5>Choice:</h5>
+						<p class="content">Capacitor offers a more native-like experience compared to Cordova since it uses modern web standards and leverages native WebView on each platform.</p>
+						<p class="content">It provides a consistent API surface across platforms, making it easier to share code between different operating systems. Capacitor also supports Progressive Web Apps (PWA), allowing developers to build web apps that can be installed on users' devices.</p> -->
+
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<h5>Hybrid:</h5>
+					<p class="content">
+						<strong>Cordova</strong>Supported by the Apache Software Foundation<br/>
+						<strong>Capacitor:</strong> Developed by the Ionic team.<br/>
+						<strong>React Native</strong>  Developed and maintained by Facebook.<br/>
+						<strong>Flutter</strong>  Developed and supported by Google.
+						</p>
+
+				</section>
+			</section>
+			<section data-transition="convex-in concave-out">
+				<h1>Security considerations when comparing native and hybrid</h1>
+			</section>
+			<!-- <section data-transition="zoom">
+				<h1>Performance</h1>
+			</section> -->
+			<section data-transition="zoom-in fade-out">
+				<section>
+				<h5>Codebase Security</h5>
+				<p class="content">
+					Native technologies typically have a smaller codebase, as they are developed specifically for a particular platform or operating system.
+					</p>
+				<h5>Platform Security:</h5>
+				<p class="content">
+					Native technologies leverage the built-in security features and measures provided by the underlying platform or operating system which includes features like secure storage, encryption libraries, access controls, and sandboxing mechanisms. These platform-specific security features are often well-established and maintained.
+					</p>
+				<h5>Updates and Patches</h5>
+				<p class="content">
+					Hybrid frameworks provide plugins to access device features, but they may not cover the full range of functionalities available natively. New or platform-specific features may take longer to become available in hybrid frameworks, and some advanced or low-level device capabilities may be inaccessible. Native apps have direct access to the latest device features and APIs, allowing for more extensive utilization of device capabilities.
+				</p>
+				</section>
+				<section>
+					<h5>Access to Device APIs</h5>
+					<p class="content">
+						Native technologies often have direct access to device APIs, allowing developers to implement security measures specific to the platform. This can include features such as biometric authentication, secure key storage, or hardware-based encryption.
+					</p>
+					<h5>Dependency on Hybrid Frameworks:</h5>
+					<p class="content">
+						Hybrid app development introduces a dependency on the chosen hybrid framework and its updates. If the framework becomes deprecated or lacks active maintenance, it can lead to compatibility issues, security vulnerabilities, and limited support for new platform features. Native development, backed by the platform providers (Apple and Google), offers long-term support, compatibility, and timely updates.
+					</p>
+					<h5>Reverse Engineering</h5>
+					<p class="content">
+						Hybrid technologies are generally more prone to reverse engineering compared to native technologies. Since hybrid apps are built using web technologies, the underlying code and logic can be more easily accessed and analyzed. This can increase the risk of intellectual property theft or the discovery of vulnerabilities.
+					</p>
+					</section>
+
+			</section>
+				<!-- <section data-transition="zoom">
+					<h3>data-transition: zoom</h3>
+				</section>
+
+				<section data-transition="zoom-in fade-out">
+					<h3>data-transition: zoom-in fade-out</h3>
+				</section>
+
+				<section>
+					<h3>Default</h3>
+				</section>
+
+				<section data-transition="convex">
+					<h3>data-transition: convex</h3>
+				</section>
+
+				<section data-transition="convex-in concave-out">
+					<h3>data-transition: convex-in concave-out</h3>
+				</section>
+
+				<section>
+					<section data-transition="zoom">
+						<h3>Default</h3>
+					</section>
+					<section data-transition="concave">
+						<h3>data-transition: concave</h3>
+					</section>
+					<section data-transition="convex-in fade-out">
+						<h3>data-transition: convex-in fade-out</h3>
+					</section>
+					<section>
+						<h3>Default</h3>
+					</section>
+				</section>
+
+				<section data-transition="none">
+					<h3>data-transition: none</h3>
+				</section>
+
+				<section>
+					<h3>Default</h3>
+				</section> -->
+
+			</div>
+
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				center: true,
+				history: true,
+
+				// transition: 'slide',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'slide'
+			});
+		</script>
+
+	</body>
+</html>
